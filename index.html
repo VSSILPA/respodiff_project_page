@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/unfair.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-3 publication-title">RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://vssilpa.github.io/" target="_blank">Silpa Vadakkeeveetil Sreelatha</a><sup> 1 </sup>,</span>
+                <span class="author-block">
+                  <a href="https://sauradip.github.io/" target="_blank">Sauradip Nag</a><sup> 2 </sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.surrey.ac.uk/people/muhammad-awais/" target="_blank">Muhammad Awais</a><sup> 1</sup>
+                  <span class="author-block">
+                    <a href="https://sergebelongie.github.io/" target="_blank">Serge Belongie</a><sup> 3 </sup>
+                   <span class="author-block">
+                    <a href="https://sites.google.com/site/2adutta/" target="_blank">Anjan Dutta</a><sup> 1 </sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup> 1 </sup>University of Surrey, <sup> 2 </sup>Simon Fraser University, <sup> 3 </sup>University of Copenhagen<br>NeurIPS 2025</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://www.arxiv.org/abs/2509.15257" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                   
+                    <!-- Supplementary PDF link 
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/VSSILPA/respodiff" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link
+                <span class="link-block">
+                  <a href="https://www.arxiv.org/abs/2509.15257" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <img src="static/images/teaser.jpg" alt="MY ALT TEXT" class="image is-centered"/>
+      <h2 class="subtitle has-text-centered">
+        Our DeNetDM model comprises a Product of Expert (PoE), featuring one deep and one shallow expert. The shallow expert primarily captures core attributes, achieving debiased classification, while the deep expert focuses on bias. To compensate for the shallow expert's limited capability due to less depth, we implement a knowledge transfer strategy utilizing knowledge from the experts to train a target debiased model.
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rapid advancement of diffusion models has enabled high-fidelity and semantically rich text-to-image generation; however, ensuring fairness and safety remains an open challenge. Existing methods typically improve fairness and safety at the expense of semantic fidelity and image quality. In this work, we propose RespoDiff, a novel framework for responsible text-to-image generation that incorporates a dual-module transformation on the intermediate bottleneck representations of diffusion models. Our approach introduces two distinct learnable modules: one focused on capturing and enforcing responsible concepts, such as fairness and safety, and the other dedicated to maintaining semantic alignment with neutral prompts. To facilitate the dual learning process, we introduce a novel score-matching objective that enables effective coordination between the modules. Our method outperforms state-of-the-art methods in responsible generation by ensuring semantic alignment while optimizing both objectives without compromising image fidelity. Our approach improves responsible and semantically coherent generation by 20% across diverse, unseen prompts. Moreover, it integrates seamlessly into large-scale models like SDXL, enhancing fairness and safety. 
+          </p>
+          <!-- <img src="static/images/teaser.jpg" alt="MY ALT TEXT" class="image is-centered"/> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper Methodology -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Methodology</h2>
+
+    <figure style="text-align: center; margin: 20px auto; max-width: 850px;">
+      <img src="static/images/model.jpg" alt="Illustration of RespoDiff" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+      <figcaption style="margin-top: 10px; font-size: 0.9em; font-style: italic; text-align: justify;">
+        <strong>Illustration of RespoDiff:</strong> A novel dual-module transformation for diffusion models, integrating a Responsible Concept Alignment module (RAM) with a Semantic Alignment Module (SAM) to ensure responsible generation while being faithful to the original diffusion process. We propose a simple score-matching objective that enables effective coordination between the modules.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- End paper abstract -->
+  <!-- Paper Methodology -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Qualitative Results</h2>
+    <img src="static/images/fair.jpg" alt="MY ALT TEXT" style="display: block; margin: 20px auto 0;"/>
+    <img src="static/images/safe.jpg" alt="MY ALT TEXT" style="display: block; margin: 20px auto 0;"/>
+  </div>
+</section> -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Qualitative Results</h2>
+
+    <figure style="text-align: center; margin: 20px auto; max-width: 850px;">
+      <img src="static/images/fair.jpg" alt="Comparison of RespoDiff and SD by gender and race" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+      <figcaption style="margin-top: 10px; font-size: 0.9em; font-style: italic; text-align: justify;">
+        <strong> Comparison of RespoDiff and SD in generating profession images by gender 
+        (top: women in first 4 columns, men in the rest) and race 
+        (bottom: Black in first 2, Asian in next 3, White in last 2). 
+        RespoDiff better reflects target attributes while maintaining fidelity to SD outputs.</strong>
+      </figcaption>
+    </figure>
+
+    <figure style="text-align: center; margin: 20px auto; max-width: 850px;">
+      <img src="static/images/safe.jpg" alt="RespoDiff safer outputs" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+      <figcaption style="margin-top: 10px; font-size: 0.9em; font-style: italic; text-align: justify;">
+        <strong> RespoDiff removes nudity and violence present in SD outputs, 
+        producing safer and more appropriate images.</strong>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Training Dynamics</h2>
+    <p>
+      Training dynamics of shallow and deep branches under DeNetDM training. DeNetDM relies on varying linear decodability of bias and core attribute for debiasing.
+    </p>
+    <img src="static/images/training_dynamics-1.png" alt="MY ALT TEXT" style="display: block; margin: 20px auto 0;"/>
+  </div>
+</section> -->
+
+<!-- End paper abstract -->
+
+
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/model_diagram.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            In Stage 1, an ensemble of shallow and deep branches produces outputs linearly combined and trained as a product of experts. 
+            The cross-entropy loss with depth modulation aids in separating biases and identifying target attributes. 
+            In Stage 2, we further introduce a target branch with the desired architecture, which also requires debiasing. 
+            This phase exclusively focuses on refining the target branch's feature extractor and classifier head while leveraging knowledge from the initial stages.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- End image carousel -->
+
+
+
+
+
+
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/teaser_diagram.pdf" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">First image description.</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">Second image description.</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">Third image description.</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">Fourth image description.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- End youtube video -->
+
+
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
+
+    </div>
+  </div>
+</section>
+-->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{sreelatha2025respodiffdualmodulebottlenecktransformation,
+      title={RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation}, 
+      author={Silpa Vadakkeeveetil Sreelatha and Sauradip Nag and Muhammad Awais and Serge Belongie and Anjan Dutta},
+      year={2025},
+      eprint={2509.15257},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.15257}}
+   </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
